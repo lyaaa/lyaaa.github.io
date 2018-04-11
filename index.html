@@ -156,6 +156,91 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-reg" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/11/reg/">半小时掌握正则表达式</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/11/reg/" class="archive-article-date">
+  	<time datetime="2018-04-11T11:49:44.175Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="正则表达"><a href="#正则表达" class="headerlink" title="正则表达"></a>正则表达</h2><p>几个正则表达式编辑器</p>
+<p>Debuggex ：<a href="https://www.debuggex.com/" target="_blank" rel="noopener">https://www.debuggex.com/</a></p>
+<p>PyRegex：<a href="http://www.pyregex.com/" target="_blank" rel="noopener">http://www.pyregex.com/</a></p>
+<p>Regexper：<a href="http://www.regexper.com/" target="_blank" rel="noopener">http://www.regexper.com/</a></p>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><ul>
+<li>正则表达式是一种特殊的字符串模式，用于匹配一组字符串，就是定义一种规则去匹配符合规则的字符。</li>
+</ul>
+<h3 id="正则表达式符号"><a href="#正则表达式符号" class="headerlink" title="正则表达式符号"></a>正则表达式符号</h3><ul>
+<li><p>匹配符</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.       //匹配除换行符 \n 之外的任何单字符。</span><br><span class="line">\d		//匹配一个数字。等价于[0-9]。</span><br><span class="line">\D		//匹配一个非数字。等价于[^0-9]。</span><br><span class="line">\w		//匹配数字、字母、下划线。等价于[0-9a-zA-Z_]。</span><br><span class="line">\W		//匹配非字母、数字、下划线。等价于 &apos;[^A-Za-z0-9_]&apos;。</span><br><span class="line">\s 		//匹配任何空白字符，包括空格、制表符、换页符等等。等价于[ \f\n\r\t\v]。</span><br><span class="line">\S 		//匹配任何非空白字符。等价于[^ \f\n\r\t\v]。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>选择符</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|		//指明两项之间的一个选择。</span><br><span class="line">[]		//字符集</span><br><span class="line">() 		//捕捉组</span><br></pre></td></tr></table></figure>
+<ul>
+<li>匹配符定位符</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">	/g		//全局匹配</span><br><span class="line">	/i 		// 忽略大小写</span><br><span class="line">	/m		//多行匹配</span><br><span class="line"></span><br><span class="line">^		//匹配输入字符串开始的位置。</span><br><span class="line">$ 		//匹配输入字符串结尾的位置。</span><br></pre></td></tr></table></figure>
+<p>案例：<br>p=/^[A-Za-z]+$/　　            //匹配由26个英文字母组成的字符串<br>p=/^[1-9]\d*$/                //匹配整数<br>p=/^\w+@+\w+[.]+\w$/          //匹配邮箱格式<br>p=/^[\u2E80-\u9FFF]+$/        //Unicode编码中的汉字范围 </p>
+<p>用正则替换字符串中的空格</p>
+<p>var p=/\s/g;<br>var str=”a sffs dfj hsdf”<br>var str1=str.replace(p,”0”);<br>console.log(str1);     //a0sffs0dfj0hsdf</p>
+<p>通过这个简单例子，相信大家对正则表达式有了更进一步的理解，祝大家学习愉快！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/11/reg/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-proto" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

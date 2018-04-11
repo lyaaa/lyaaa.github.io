@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 刘沅的博客</title>
+  <title>半小时掌握正则表达式 | 刘沅的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="刘沅的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="正则表达几个正则表达式编辑器 Debuggex ：https://www.debuggex.com/ PyRegex：http://www.pyregex.com/ Regexper：http://www.regexper.com/ 正则表达式 正则表达式是一种特殊的字符串模式，用于匹配一组字符串，就是定义一种规则去匹配符合规则的字符。  正则表达式符号 匹配符 1234567.       //">
+<meta property="og:type" content="article">
+<meta property="og:title" content="半小时掌握正则表达式">
+<meta property="og:url" content="http://yoursite.com/2018/04/11/reg/index.html">
 <meta property="og:site_name" content="刘沅的博客">
+<meta property="og:description" content="正则表达几个正则表达式编辑器 Debuggex ：https://www.debuggex.com/ PyRegex：http://www.pyregex.com/ Regexper：http://www.regexper.com/ 正则表达式 正则表达式是一种特殊的字符串模式，用于匹配一组字符串，就是定义一种规则去匹配符合规则的字符。  正则表达式符号 匹配符 1234567.       //">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-11T13:26:54.827Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="刘沅的博客">
+<meta name="twitter:title" content="半小时掌握正则表达式">
+<meta name="twitter:description" content="正则表达几个正则表达式编辑器 Debuggex ：https://www.debuggex.com/ PyRegex：http://www.pyregex.com/ Regexper：http://www.regexper.com/ 正则表达式 正则表达式是一种特殊的字符串模式，用于匹配一组字符串，就是定义一种规则去匹配符合规则的字符。  正则表达式符号 匹配符 1234567.       //">
   
     <link rel="alternative" href="/atom.xml" title="刘沅的博客" type="application/atom+xml">
   
@@ -154,130 +158,178 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-reg" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      半小时掌握正则表达式
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/11/reg/" class="archive-article-date">
+
+        
+        <a href="/2018/04/11/reg/" class="archive-article-date">
   	<time datetime="2018-04-11T11:49:44.175Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-11</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/11/reg/">半小时掌握正则表达式</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="正则表达"><a href="#正则表达" class="headerlink" title="正则表达"></a>正则表达</h2><p>几个正则表达式编辑器</p>
+<p>Debuggex ：<a href="https://www.debuggex.com/" target="_blank" rel="noopener">https://www.debuggex.com/</a></p>
+<p>PyRegex：<a href="http://www.pyregex.com/" target="_blank" rel="noopener">http://www.pyregex.com/</a></p>
+<p>Regexper：<a href="http://www.regexper.com/" target="_blank" rel="noopener">http://www.regexper.com/</a></p>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><ul>
+<li>正则表达式是一种特殊的字符串模式，用于匹配一组字符串，就是定义一种规则去匹配符合规则的字符。</li>
+</ul>
+<h3 id="正则表达式符号"><a href="#正则表达式符号" class="headerlink" title="正则表达式符号"></a>正则表达式符号</h3><ul>
+<li><p>匹配符</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.       //匹配除换行符 \n 之外的任何单字符。</span><br><span class="line">\d		//匹配一个数字。等价于[0-9]。</span><br><span class="line">\D		//匹配一个非数字。等价于[^0-9]。</span><br><span class="line">\w		//匹配数字、字母、下划线。等价于[0-9a-zA-Z_]。</span><br><span class="line">\W		//匹配非字母、数字、下划线。等价于 &apos;[^A-Za-z0-9_]&apos;。</span><br><span class="line">\s 		//匹配任何空白字符，包括空格、制表符、换页符等等。等价于[ \f\n\r\t\v]。</span><br><span class="line">\S 		//匹配任何非空白字符。等价于[^ \f\n\r\t\v]。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>选择符</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|		//指明两项之间的一个选择。</span><br><span class="line">[]		//字符集</span><br><span class="line">() 		//捕捉组</span><br></pre></td></tr></table></figure>
+<ul>
+<li>匹配符定位符</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">	/g		//全局匹配</span><br><span class="line">	/i 		// 忽略大小写</span><br><span class="line">	/m		//多行匹配</span><br><span class="line"></span><br><span class="line">^		//匹配输入字符串开始的位置。</span><br><span class="line">$ 		//匹配输入字符串结尾的位置。</span><br></pre></td></tr></table></figure>
+<p>案例：<br>p=/^[A-Za-z]+$/　　            //匹配由26个英文字母组成的字符串<br>p=/^[1-9]\d*$/                //匹配整数<br>p=/^\w+@+\w+[.]+\w$/          //匹配邮箱格式<br>p=/^[\u2E80-\u9FFF]+$/        //Unicode编码中的汉字范围 </p>
+<p>用正则替换字符串中的空格</p>
+<p>var p=/\s/g;<br>var str=”a sffs dfj hsdf”<br>var str1=str.replace(p,”0”);<br>console.log(str1);     //a0sffs0dfj0hsdf</p>
+<p>通过这个简单例子，相信大家对正则表达式有了更进一步的理解，祝大家学习愉快！</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/04/11/reg/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/10/proto/" class="archive-article-date">
-  	<time datetime="2018-04-10T11:33:43.923Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-10</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/04/10/proto/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">技术分享篇</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/10/proto/">技术分享篇</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/09/closure/" class="archive-article-date">
-  	<time datetime="2018-04-09T09:03:05.965Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/09/closure/">技术分享篇</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/08/blog/" class="archive-article-date">
-  	<time datetime="2018-04-08T08:32:56.834Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/08/blog/">技术分享篇</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -300,8 +352,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
