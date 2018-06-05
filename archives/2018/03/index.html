@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>刘沅的博客</title>
+  <title>Archives: 2018/3 | 刘沅的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="刘沅的博客">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2018/03/index.html">
 <meta property="og:site_name" content="刘沅的博客">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
@@ -156,97 +156,101 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/03/22/vueSwiper/" class="archive-article-date">
+  	<time datetime="2018-03-22T08:41:02.969Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-22</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/20/blog/">技术分享篇</a>
+      <a class="archive-article-title" href="/2018/03/22/vueSwiper/">vue2.0使用swiper组件实现轮播</a>
     </h1>
   
 
-        
-        <a href="/2017/10/20/blog/" class="archive-article-date">
-  	<time datetime="2017-10-20T08:51:39.882Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://www.ly6688.top" target="_blank" rel="noopener">刘沅</a> blog! </p>
-<h2 id="博客创建"><a href="#博客创建" class="headerlink" title="博客创建"></a>博客创建</h2><h3 id="1-安装前提"><a href="#1-安装前提" class="headerlink" title="1.安装前提"></a>1.安装前提</h3><p>Hexo 是基于Node.js的一个博客框架，安装Hexo的前提需要安装Node.js。</p>
-<h3 id="2-安装-node-js"><a href="#2-安装-node-js" class="headerlink" title="2.安装 node.js"></a>2.安装 node.js</h3><ul>
-<li>node.js是运行环境，这个运行环境是运行js代码的（运行环境–&gt;浏览器）。</li>
-<li>在网络上搜索node.js中文网选择下载，找到自己电脑版本下载安装（傻瓜式安装–&gt;一直按下一步）。</li>
-<li>按Window+R打开命令提示窗，按 node -v , npm -v按确认键来进行验证node.js是否安装成功。<h3 id="3-安装Hexo工具"><a href="#3-安装Hexo工具" class="headerlink" title="3.安装Hexo工具"></a>3.安装Hexo工具</h3></li>
-<li>在当前环境下按 npm install -g hexo-cli  //安装hexo工具（如果速度过慢  可以按ctrl+c终止，切换安装源 npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a>   淘宝安装镜像文件可以加速下载）。</li>
-</ul>
-<h3 id="4-安装博客源代码"><a href="#4-安装博客源代码" class="headerlink" title="4.安装博客源代码"></a>4.安装博客源代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//在你的磁盘中创建一个文件夹（路径内不含中文）</span><br><span class="line">$ hexo init blog  //找到这个的文件夹 按shift+鼠标右键选择 在此处打开Powershell窗口 输入此命令。</span><br><span class="line">$ cd blog    //切换到当前blog文件夹中</span><br><span class="line">$ nmp install   //安装依赖文件</span><br><span class="line">$ hexo server   //在本地开启服务器</span><br></pre></td></tr></table></figure>
-<h3 id="5-创建github库"><a href="#5-创建github库" class="headerlink" title="5.创建github库"></a>5.创建github库</h3><ul>
-<li>输入网址打开<a href="http://www.github.com" target="_blank" rel="noopener">http://www.github.com</a>,创建一个账户</li>
-<li>选择 New repository 创建一个新库命名方式为   用户的名称+.github.io<h3 id="6-安装git插件并配置远程仓库"><a href="#6-安装git插件并配置远程仓库" class="headerlink" title="6.安装git插件并配置远程仓库"></a>6.安装git插件并配置远程仓库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$  npm install hexo-deployer-git --save    //开启服务器后安装插件</span><br><span class="line">// 在hexo的项目中，根目录中找到 [_config.yml]()文件进行配置</span><br><span class="line">$ deploy :</span><br><span class="line">$	type : git    //注意每个冒号后面要有空格</span><br><span class="line">$ 	respository: git@github.com:lyaaa/lyaaa.github.io.git  //github地址在Code下 Clone or download下</span><br><span class="line">$ 	branch: master   //主分支</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="7-将hexo代码放到远程服务器上"><a href="#7-将hexo代码放到远程服务器上" class="headerlink" title="7.将hexo代码放到远程服务器上"></a>7.将hexo代码放到远程服务器上</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ 	hexo clean    //将之前的生成的public文件夹删掉</span><br><span class="line">$ 	hexo d g      //生成html代码并且提交到github上   d 表示提交、  g 表示生成</span><br></pre></td></tr></table></figure>
-<h3 id="8-查看博客"><a href="#8-查看博客" class="headerlink" title="8.查看博客"></a>8.查看博客</h3><ul>
-<li>本地查看   启动服务器hexo server 在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> or <a href="http://127.0.0.1:4000/" target="_blank" rel="noopener">http://127.0.0.1:4000/</a></li>
-<li>远程查看    打开github找到当前文件位置，选择Settings下拉找到 GitHub Pages 复制链接 <a href="https://lyaaa.github.io/" target="_blank" rel="noopener">https://lyaaa.github.io/</a> 打开查看<h3 id="9-博客界面优化"><a href="#9-博客界面优化" class="headerlink" title="9.博客界面优化"></a>9.博客界面优化</h3></li>
-<li>在github主页中搜索hexo 主题</li>
-<li>选择一个主题打开</li>
-<li>在服务器上下载安装包 如 git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</li>
-<li>修改配置 找到hexo根目录下的 _config.yml 下的 theme:修改为 yilia  。</li>
-</ul>
-<hr>
-<h3 id="骚年去安装属于你自己的博客吧"><a href="#骚年去安装属于你自己的博客吧" class="headerlink" title="骚年去安装属于你自己的博客吧!!!"></a>骚年去安装属于你自己的博客吧!!!</h3>
-      
+        <div class="article-info info-on-right">
+          
+          
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/20/blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/03/17/floa/" class="archive-article-date">
+  	<time datetime="2018-03-17T08:37:07.144Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-17</time>
+</a>
         </div>
-        
-        
-    </div>
-</aside>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/03/17/floa/">事件流</a>
+    </h1>
+  
 
+        <div class="article-info info-on-right">
+          
+          
 
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/03/13/vuemitui/" class="archive-article-date">
+  	<time datetime="2018-03-13T03:32:26.793Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-13</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/03/13/vuemitui/">搭建Vuemint-ui 框架</a>
+    </h1>
+  
 
+        <div class="article-info info-on-right">
+          
+          
 
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
   
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
+    </div></section>
   
+
+    
 
 
           </div>
@@ -268,9 +272,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

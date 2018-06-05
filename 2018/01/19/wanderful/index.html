@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>刘沅的博客</title>
+  <title>瀑布流照片墙布局 | 刘沅的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="刘沅的博客">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+  <meta name="description" content="瀑布流概念 瀑布流布局是错落式的布局方式。它有一个特点，整个布局以列为单位，下一个区块总是放在总高度最短的那一列的下面。  实现 html代码块  123456&amp;lt;ul id=&amp;quot;pics&amp;quot;&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&amp;l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="瀑布流照片墙布局">
+<meta property="og:url" content="http://yoursite.com/2018/01/19/wanderful/index.html">
 <meta property="og:site_name" content="刘沅的博客">
+<meta property="og:description" content="瀑布流概念 瀑布流布局是错落式的布局方式。它有一个特点，整个布局以列为单位，下一个区块总是放在总高度最短的那一列的下面。  实现 html代码块  123456&amp;lt;ul id=&amp;quot;pics&amp;quot;&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&amp;l">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-01-19T02:17:01.861Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="刘沅的博客">
+<meta name="twitter:title" content="瀑布流照片墙布局">
+<meta name="twitter:description" content="瀑布流概念 瀑布流布局是错落式的布局方式。它有一个特点，整个布局以列为单位，下一个区块总是放在总高度最短的那一列的下面。  实现 html代码块  123456&amp;lt;ul id=&amp;quot;pics&amp;quot;&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&amp;l">
   
     <link rel="alternative" href="/atom.xml" title="刘沅的博客" type="application/atom+xml">
   
@@ -154,55 +158,70 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-wanderful" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/20/blog/">技术分享篇</a>
+    <h1 class="article-title" itemprop="name">
+      瀑布流照片墙布局
     </h1>
   
 
         
-        <a href="/2017/10/20/blog/" class="archive-article-date">
-  	<time datetime="2017-10-20T08:51:39.882Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-20</time>
+        <a href="/2018/01/19/wanderful/" class="archive-article-date">
+  	<time datetime="2018-01-19T02:16:59.808Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://www.ly6688.top" target="_blank" rel="noopener">刘沅</a> blog! </p>
-<h2 id="博客创建"><a href="#博客创建" class="headerlink" title="博客创建"></a>博客创建</h2><h3 id="1-安装前提"><a href="#1-安装前提" class="headerlink" title="1.安装前提"></a>1.安装前提</h3><p>Hexo 是基于Node.js的一个博客框架，安装Hexo的前提需要安装Node.js。</p>
-<h3 id="2-安装-node-js"><a href="#2-安装-node-js" class="headerlink" title="2.安装 node.js"></a>2.安装 node.js</h3><ul>
-<li>node.js是运行环境，这个运行环境是运行js代码的（运行环境–&gt;浏览器）。</li>
-<li>在网络上搜索node.js中文网选择下载，找到自己电脑版本下载安装（傻瓜式安装–&gt;一直按下一步）。</li>
-<li>按Window+R打开命令提示窗，按 node -v , npm -v按确认键来进行验证node.js是否安装成功。<h3 id="3-安装Hexo工具"><a href="#3-安装Hexo工具" class="headerlink" title="3.安装Hexo工具"></a>3.安装Hexo工具</h3></li>
-<li>在当前环境下按 npm install -g hexo-cli  //安装hexo工具（如果速度过慢  可以按ctrl+c终止，切换安装源 npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a>   淘宝安装镜像文件可以加速下载）。</li>
+        <h3 id="瀑布流概念"><a href="#瀑布流概念" class="headerlink" title="瀑布流概念"></a>瀑布流概念</h3><ul>
+<li>瀑布流布局是错落式的布局方式。它有一个特点，整个布局以列为单位，下一个区块总是放在总高度最短的那一列的下面。</li>
 </ul>
-<h3 id="4-安装博客源代码"><a href="#4-安装博客源代码" class="headerlink" title="4.安装博客源代码"></a>4.安装博客源代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//在你的磁盘中创建一个文件夹（路径内不含中文）</span><br><span class="line">$ hexo init blog  //找到这个的文件夹 按shift+鼠标右键选择 在此处打开Powershell窗口 输入此命令。</span><br><span class="line">$ cd blog    //切换到当前blog文件夹中</span><br><span class="line">$ nmp install   //安装依赖文件</span><br><span class="line">$ hexo server   //在本地开启服务器</span><br></pre></td></tr></table></figure>
-<h3 id="5-创建github库"><a href="#5-创建github库" class="headerlink" title="5.创建github库"></a>5.创建github库</h3><ul>
-<li>输入网址打开<a href="http://www.github.com" target="_blank" rel="noopener">http://www.github.com</a>,创建一个账户</li>
-<li>选择 New repository 创建一个新库命名方式为   用户的名称+.github.io<h3 id="6-安装git插件并配置远程仓库"><a href="#6-安装git插件并配置远程仓库" class="headerlink" title="6.安装git插件并配置远程仓库"></a>6.安装git插件并配置远程仓库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$  npm install hexo-deployer-git --save    //开启服务器后安装插件</span><br><span class="line">// 在hexo的项目中，根目录中找到 [_config.yml]()文件进行配置</span><br><span class="line">$ deploy :</span><br><span class="line">$	type : git    //注意每个冒号后面要有空格</span><br><span class="line">$ 	respository: git@github.com:lyaaa/lyaaa.github.io.git  //github地址在Code下 Clone or download下</span><br><span class="line">$ 	branch: master   //主分支</span><br></pre></td></tr></table></figure>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><ul>
+<li>html代码块</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul id=&quot;pics&quot;&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>css代码块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">*&#123;margin:0;padding:0&#125;;</span><br><span class="line">#pics&#123;list-style: none;margin: 30px auto;width: 1080px;&#125;</span><br><span class="line">#pics li&#123;float: left;width: 250px;margin: 10px;&#125;</span><br><span class="line">#pics li div&#123;width: 210px;padding: 10px;border: 1px solid gray;margin-bottom: 20px;&#125;</span><br><span class="line">#pics li div img&#123;width: 200px;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>js代码块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">//运用ajax获取图片地址</span><br><span class="line"></span><br><span class="line">//获取页面元素(组件/控件)</span><br><span class="line">let lis=document.getElementById(&quot;pics&quot;).getElementsByTagName(&quot;li&quot;);</span><br><span class="line"></span><br><span class="line">//接收服务器数据</span><br><span class="line">function fn(data)&#123;</span><br><span class="line">	//遍历所有数据</span><br><span class="line">	for(let i in data)&#123;</span><br><span class="line">		let oDiv=document.createElement(&quot;div&quot;);</span><br><span class="line">		let oImg=document.createElement(&quot;img&quot;);</span><br><span class="line">		let oP=document.createElement(&quot;p&quot;);</span><br><span class="line">		//将接收的数据放到页面组件中</span><br><span class="line">		oImg.src=data[i].preview; //缩略图</span><br><span class="line">		oP.innerHTML=data[i].title;  //标题</span><br><span class="line">		//将oImg和oP放到oDiv中</span><br><span class="line">		oDiv.appendChild(oImg);</span><br><span class="line">		oDiv.appendChild(oP);</span><br><span class="line">		//按一定的规律将图片放入到li中</span><br><span class="line">		switch(i%4)&#123;</span><br><span class="line">			case 0:</span><br><span class="line">				lis[0].appendChild(oDiv);</span><br><span class="line">			break;</span><br><span class="line">			case 1:</span><br><span class="line">				lis[1].appendChild(oDiv);</span><br><span class="line">			break;</span><br><span class="line">			case 2:</span><br><span class="line">				lis[2].appendChild(oDiv);</span><br><span class="line">			break;</span><br><span class="line">			case 3:</span><br><span class="line">				lis[3].appendChild(oDiv);</span><br><span class="line">			break;</span><br><span class="line">			default:</span><br><span class="line">				lis[0].appendChild(oDiv);</span><br><span class="line">			break;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//pageIndex表示页码</span><br><span class="line">let pageIndex=1;</span><br><span class="line">let JSONP=document.creatElement(&quot;script&quot;);</span><br><span class="line">JSONP.type=&apos;text/javaScript&apos;;</span><br><span class="line">//src表示地址 fn表示回调函数</span><br><span class="line">JSONP.src=&quot;http://www.wookmark.com/api/json/popular?page=&apos;+pageIndex+&apos;&amp;callback=fn&quot;;</span><br><span class="line">document.body.appendChild(JSONP);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>这种方式实现的效果是每个列的元素内的图片数量是一致的，如果某一列高度图片过高，那么就会出现最后的效果是参差不齐的。如果在加载下一页，效果就会更加不好，会存在一个又一个的窟窿，这显然是和我们想要的效果是不一致的。那样这就需要我们队代码进行一定的更改。<br>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">//获取页面元素(组件/控件)</span><br><span class="line">let lis=document.getElementById(&quot;pics&quot;).getElementsByTagName(&quot;li&quot;);</span><br><span class="line">//pageIndex表示页码</span><br><span class="line">let pageIndex=1;</span><br><span class="line">let isLoaded=false;</span><br><span class="line">loadData();//加载数据</span><br><span class="line"></span><br><span class="line">//滚动事件</span><br><span class="line">window.onscroll=function()&#123;</span><br><span class="line">	var index=getMinHeight();//最短列的索引</span><br><span class="line">	// console.log(document.documentElement.scrollTop);//滚动距离</span><br><span class="line">	//滚动高度</span><br><span class="line">	var h1=document.documentElement.scrollTop;</span><br><span class="line">	var h2=document.documentElement.clientHeight;//视口高度</span><br><span class="line">	var h3=lis[index].offsetHeight;//最短列高度</span><br><span class="line">	if(h1+h2&gt;h3)&#123;</span><br><span class="line">		//加载下一页</span><br><span class="line">		pageIndex++;</span><br><span class="line">		if(isLoaded)&#123;</span><br><span class="line">			loadData();	</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//接收服务器数据</span><br><span class="line">function fn(data)&#123;</span><br><span class="line">	//遍历所有数据</span><br><span class="line">	for(let i in data)&#123;</span><br><span class="line">		let oDiv=document.createElement(&quot;div&quot;);</span><br><span class="line">		let oImg=document.createElement(&quot;img&quot;);</span><br><span class="line">		let oP=document.createElement(&quot;p&quot;);</span><br><span class="line">		//将接收的数据放到页面组件中</span><br><span class="line">		oImg.src=data[i].preview; //缩略图preview表图片路径</span><br><span class="line">		oP.innerHTML=data[i].title;  //标题title表图片标题</span><br><span class="line">		//将oImg和oP放到oDiv中</span><br><span class="line">		oDiv.appendChild(oImg);</span><br><span class="line">		oDiv.appendChild(oP);</span><br><span class="line"></span><br><span class="line">		//设置div预留高度</span><br><span class="line">		var oH=(data[i].height/data[i].width)*220+80+&apos;px&apos;;</span><br><span class="line">		oDiv.style.height=oH;</span><br><span class="line">		oDiv.appendChild(oImg);</span><br><span class="line">		oDiv.appendChild(oP);</span><br><span class="line">		//计算 上一次存放后，所有列中最短列</span><br><span class="line">		//将图片放置在最短的列中</span><br><span class="line">		var index=getMinHeight();</span><br><span class="line">		lis[index].appendChild(oDiv);</span><br><span class="line">	&#125;</span><br><span class="line">	isLoaded=true;//加载完毕</span><br><span class="line">	</span><br><span class="line">&#125;;</span><br><span class="line">//获取最短列</span><br><span class="line">function getMinHeight()&#123;</span><br><span class="line">	let minIndex=0;		//假设第一列最短 最短列索引</span><br><span class="line">	//取出最短列的高度</span><br><span class="line">	let mHieght=lis[minIndex].offsetHeight;</span><br><span class="line">	for(let i=0;i&lt;lis.length;i++)&#123;</span><br><span class="line">		if(lis[i].offsetHeight&lt;mHieght)&#123;</span><br><span class="line">			mHieght=lis[i].offsetHeight;	//将高度短的列的高度保存起来</span><br><span class="line">			minIndex=i;	//将短的列的索引保存起来</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return minIndex;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">function loadData()&#123;</span><br><span class="line">	isLoaded=false;//正在加载	</span><br><span class="line">	let JSONP=document.creatElement(&quot;script&quot;);</span><br><span class="line">	JSONP.type=&apos;text/javaScript&apos;;</span><br><span class="line">	//src表示地址大家可以自行添加 fn表示回调函数</span><br><span class="line">	JSONP.src=&quot;http://----?page=&apos;+pageIndex+&apos;&amp;callback=fn&quot;;</span><br><span class="line">	document.body.appendChild(JSONP);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>最后还需要提醒大家一点，本篇文章中的例子仅供参考学习，是用于帮助大家理解瀑布流布局的，切误将本篇文章中的代码直接使用在正式项目当中。希望以上代码对大家有所帮助。</p>
 </li>
 </ul>
-<h3 id="7-将hexo代码放到远程服务器上"><a href="#7-将hexo代码放到远程服务器上" class="headerlink" title="7.将hexo代码放到远程服务器上"></a>7.将hexo代码放到远程服务器上</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ 	hexo clean    //将之前的生成的public文件夹删掉</span><br><span class="line">$ 	hexo d g      //生成html代码并且提交到github上   d 表示提交、  g 表示生成</span><br></pre></td></tr></table></figure>
-<h3 id="8-查看博客"><a href="#8-查看博客" class="headerlink" title="8.查看博客"></a>8.查看博客</h3><ul>
-<li>本地查看   启动服务器hexo server 在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> or <a href="http://127.0.0.1:4000/" target="_blank" rel="noopener">http://127.0.0.1:4000/</a></li>
-<li>远程查看    打开github找到当前文件位置，选择Settings下拉找到 GitHub Pages 复制链接 <a href="https://lyaaa.github.io/" target="_blank" rel="noopener">https://lyaaa.github.io/</a> 打开查看<h3 id="9-博客界面优化"><a href="#9-博客界面优化" class="headerlink" title="9.博客界面优化"></a>9.博客界面优化</h3></li>
-<li>在github主页中搜索hexo 主题</li>
-<li>选择一个主题打开</li>
-<li>在服务器上下载安装包 如 git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</li>
-<li>修改配置 找到hexo根目录下的 _config.yml 下的 theme:修改为 yilia  。</li>
-</ul>
-<hr>
-<h3 id="骚年去安装属于你自己的博客吧"><a href="#骚年去安装属于你自己的博客吧" class="headerlink" title="骚年去安装属于你自己的博客吧!!!"></a>骚年去安装属于你自己的博客吧!!!</h3>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -211,16 +230,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/20/blog/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/19/wanderful/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/03/13/vuemitui/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          搭建Vuemint-ui 框架
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/12/06/reg/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">半小时掌握正则表达式</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -240,12 +327,14 @@
 
 
 
+  
+  
+  
 
   
+
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
+
   
 
 
@@ -268,8 +357,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

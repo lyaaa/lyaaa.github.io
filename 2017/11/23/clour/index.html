@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>刘沅的博客</title>
+  <title>技术分享篇 | 刘沅的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="刘沅的博客">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+  <meta name="description" content="Welcome to 刘沅 blog!  闭包现象1.什么是闭包 闭包是就是函数中的函数，里面的函数可以访问外面函数的变量，外面的变量的是这个内部函数的一部分。  2.变量作用域 要理解闭包，首先要了解JavaScript的变量作用域 变量的作用域有两种：全局变量、局部变量 全局变量：变量定义在函数外面，在函数内可以调用 局部变量：变量定义在函数内，在函数外不能调用  3.闭包1234567891">
+<meta property="og:type" content="article">
+<meta property="og:title" content="技术分享篇">
+<meta property="og:url" content="http://yoursite.com/2017/11/23/clour/index.html">
 <meta property="og:site_name" content="刘沅的博客">
+<meta property="og:description" content="Welcome to 刘沅 blog!  闭包现象1.什么是闭包 闭包是就是函数中的函数，里面的函数可以访问外面函数的变量，外面的变量的是这个内部函数的一部分。  2.变量作用域 要理解闭包，首先要了解JavaScript的变量作用域 变量的作用域有两种：全局变量、局部变量 全局变量：变量定义在函数外面，在函数内可以调用 局部变量：变量定义在函数内，在函数外不能调用  3.闭包1234567891">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2017-11-23T02:29:43.645Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="刘沅的博客">
+<meta name="twitter:title" content="技术分享篇">
+<meta name="twitter:description" content="Welcome to 刘沅 blog!  闭包现象1.什么是闭包 闭包是就是函数中的函数，里面的函数可以访问外面函数的变量，外面的变量的是这个内部函数的一部分。  2.变量作用域 要理解闭包，首先要了解JavaScript的变量作用域 变量的作用域有两种：全局变量、局部变量 全局变量：变量定义在函数外面，在函数内可以调用 局部变量：变量定义在函数内，在函数外不能调用  3.闭包1234567891">
   
     <link rel="alternative" href="/atom.xml" title="刘沅的博客" type="application/atom+xml">
   
@@ -154,22 +158,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-clour" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/20/blog/">技术分享篇</a>
+    <h1 class="article-title" itemprop="name">
+      技术分享篇
     </h1>
   
 
         
-        <a href="/2017/10/20/blog/" class="archive-article-date">
-  	<time datetime="2017-10-20T08:51:39.882Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-20</time>
+        <a href="/2017/11/23/clour/" class="archive-article-date">
+  	<time datetime="2017-11-23T02:29:43.644Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-23</time>
 </a>
         
       </header>
@@ -177,32 +179,50 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a href="https://www.ly6688.top" target="_blank" rel="noopener">刘沅</a> blog! </p>
-<h2 id="博客创建"><a href="#博客创建" class="headerlink" title="博客创建"></a>博客创建</h2><h3 id="1-安装前提"><a href="#1-安装前提" class="headerlink" title="1.安装前提"></a>1.安装前提</h3><p>Hexo 是基于Node.js的一个博客框架，安装Hexo的前提需要安装Node.js。</p>
-<h3 id="2-安装-node-js"><a href="#2-安装-node-js" class="headerlink" title="2.安装 node.js"></a>2.安装 node.js</h3><ul>
-<li>node.js是运行环境，这个运行环境是运行js代码的（运行环境–&gt;浏览器）。</li>
-<li>在网络上搜索node.js中文网选择下载，找到自己电脑版本下载安装（傻瓜式安装–&gt;一直按下一步）。</li>
-<li>按Window+R打开命令提示窗，按 node -v , npm -v按确认键来进行验证node.js是否安装成功。<h3 id="3-安装Hexo工具"><a href="#3-安装Hexo工具" class="headerlink" title="3.安装Hexo工具"></a>3.安装Hexo工具</h3></li>
-<li>在当前环境下按 npm install -g hexo-cli  //安装hexo工具（如果速度过慢  可以按ctrl+c终止，切换安装源 npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a>   淘宝安装镜像文件可以加速下载）。</li>
+<h2 id="闭包现象"><a href="#闭包现象" class="headerlink" title="闭包现象"></a>闭包现象</h2><h3 id="1-什么是闭包"><a href="#1-什么是闭包" class="headerlink" title="1.什么是闭包"></a>1.什么是闭包</h3><ul>
+<li>闭包是就是函数中的函数，里面的函数可以访问外面函数的变量，外面的变量的是这个内部函数的一部分。</li>
 </ul>
-<h3 id="4-安装博客源代码"><a href="#4-安装博客源代码" class="headerlink" title="4.安装博客源代码"></a>4.安装博客源代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//在你的磁盘中创建一个文件夹（路径内不含中文）</span><br><span class="line">$ hexo init blog  //找到这个的文件夹 按shift+鼠标右键选择 在此处打开Powershell窗口 输入此命令。</span><br><span class="line">$ cd blog    //切换到当前blog文件夹中</span><br><span class="line">$ nmp install   //安装依赖文件</span><br><span class="line">$ hexo server   //在本地开启服务器</span><br></pre></td></tr></table></figure>
-<h3 id="5-创建github库"><a href="#5-创建github库" class="headerlink" title="5.创建github库"></a>5.创建github库</h3><ul>
-<li>输入网址打开<a href="http://www.github.com" target="_blank" rel="noopener">http://www.github.com</a>,创建一个账户</li>
-<li>选择 New repository 创建一个新库命名方式为   用户的名称+.github.io<h3 id="6-安装git插件并配置远程仓库"><a href="#6-安装git插件并配置远程仓库" class="headerlink" title="6.安装git插件并配置远程仓库"></a>6.安装git插件并配置远程仓库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$  npm install hexo-deployer-git --save    //开启服务器后安装插件</span><br><span class="line">// 在hexo的项目中，根目录中找到 [_config.yml]()文件进行配置</span><br><span class="line">$ deploy :</span><br><span class="line">$	type : git    //注意每个冒号后面要有空格</span><br><span class="line">$ 	respository: git@github.com:lyaaa/lyaaa.github.io.git  //github地址在Code下 Clone or download下</span><br><span class="line">$ 	branch: master   //主分支</span><br></pre></td></tr></table></figure>
-</li>
+<h3 id="2-变量作用域"><a href="#2-变量作用域" class="headerlink" title="2.变量作用域"></a>2.变量作用域</h3><ul>
+<li>要理解闭包，首先要了解JavaScript的变量作用域</li>
+<li>变量的作用域有两种：全局变量、局部变量</li>
+<li>全局变量：变量定义在函数外面，在函数内可以调用</li>
+<li>局部变量：变量定义在函数内，在函数外不能调用</li>
 </ul>
-<h3 id="7-将hexo代码放到远程服务器上"><a href="#7-将hexo代码放到远程服务器上" class="headerlink" title="7.将hexo代码放到远程服务器上"></a>7.将hexo代码放到远程服务器上</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ 	hexo clean    //将之前的生成的public文件夹删掉</span><br><span class="line">$ 	hexo d g      //生成html代码并且提交到github上   d 表示提交、  g 表示生成</span><br></pre></td></tr></table></figure>
-<h3 id="8-查看博客"><a href="#8-查看博客" class="headerlink" title="8.查看博客"></a>8.查看博客</h3><ul>
-<li>本地查看   启动服务器hexo server 在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> or <a href="http://127.0.0.1:4000/" target="_blank" rel="noopener">http://127.0.0.1:4000/</a></li>
-<li>远程查看    打开github找到当前文件位置，选择Settings下拉找到 GitHub Pages 复制链接 <a href="https://lyaaa.github.io/" target="_blank" rel="noopener">https://lyaaa.github.io/</a> 打开查看<h3 id="9-博客界面优化"><a href="#9-博客界面优化" class="headerlink" title="9.博客界面优化"></a>9.博客界面优化</h3></li>
-<li>在github主页中搜索hexo 主题</li>
-<li>选择一个主题打开</li>
-<li>在服务器上下载安装包 如 git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</li>
-<li>修改配置 找到hexo根目录下的 _config.yml 下的 theme:修改为 yilia  。</li>
-</ul>
-<hr>
-<h3 id="骚年去安装属于你自己的博客吧"><a href="#骚年去安装属于你自己的博客吧" class="headerlink" title="骚年去安装属于你自己的博客吧!!!"></a>骚年去安装属于你自己的博客吧!!!</h3>
+<h3 id="3-闭包"><a href="#3-闭包" class="headerlink" title="3.闭包"></a>3.闭包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// 例：</span><br><span class="line"></span><br><span class="line"> $ &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">$ 	function demo()&#123;</span><br><span class="line">		var num=1;</span><br><span class="line">		function demo1()&#123;</span><br><span class="line">			var num1=2;</span><br><span class="line">			console.log(num); //true</span><br><span class="line">		&#125;	</span><br><span class="line">		//console.log(num1);   error</span><br><span class="line">	&#125;</span><br><span class="line">	demo();</span><br><span class="line">$ &lt;/ script&gt;</span><br><span class="line"> &lt;-- 这里的函数demo1()和变量num1就形成了一个闭包 --&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="4-常见陷阱"><a href="#4-常见陷阱" class="headerlink" title="4.常见陷阱"></a>4.常见陷阱</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function createFunction()&#123;</span><br><span class="line">var  result=[];</span><br><span class="line">for(var i=0;i&lt;10;i++)&#123;</span><br><span class="line">	result[i]=function()&#123;</span><br><span class="line">		return i;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">result result;</span><br><span class="line">&#125;</span><br><span class="line">var a=createFunction();</span><br><span class="line">for(var i=0;i&lt;a.length;i++)&#123;</span><br><span class="line">	console.log(a[i]());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>咋一看输出的是0~9，但实际上市输出的是10个9。<br>这就是陷阱 像a=function(){alert(‘你好’);}是不会弹出窗口的，只有家加上a();才可以执行代码。</p>
+<h3 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案 1"></a>解决方案 1</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function createFunction()&#123;</span><br><span class="line">	var  result=[];</span><br><span class="line">	for(var i=0;i&lt;10;i++)&#123;</span><br><span class="line">		(function(j)&#123;</span><br><span class="line">			console.log(j);</span><br><span class="line">		&#125;)(i)</span><br><span class="line">	&#125;</span><br><span class="line">	return result;</span><br><span class="line">&#125;</span><br><span class="line"> var a=createFunction();</span><br><span class="line"> for(var i=0;i&lt;a.length;i++)&#123;</span><br><span class="line"> console.log(a[i]());</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>这样就输出了0~9 十个数。</p>
+<h3 id="解决方案-2"><a href="#解决方案-2" class="headerlink" title="解决方案 2"></a>解决方案 2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function createFunction()&#123;</span><br><span class="line">	var  result=[];</span><br><span class="line">	for(var i=0;i&lt;10;i++)&#123;</span><br><span class="line">		result[i]=(function(j)&#123;  //原理和上面一种方法一样的，所以可以实现闭包 </span><br><span class="line">			return function()&#123;	 //在这个闭包里面再写一个匿名函数</span><br><span class="line">				return j</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;)(i)</span><br><span class="line">	&#125;</span><br><span class="line">	return result;</span><br><span class="line">&#125;</span><br><span class="line"> var a=createFunction();</span><br><span class="line"> for(var i=0;i&lt;a.length;i++)&#123;</span><br><span class="line"> console.log(a[i]());</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果和方案1 一致。</p>
+<h3 id="解决方案-3"><a href="#解决方案-3" class="headerlink" title="解决方案 3"></a>解决方案 3</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function createFunction()&#123;</span><br><span class="line">		var  result=[];</span><br><span class="line">		for(var i=0;i&lt;10;i++)&#123;</span><br><span class="line">			result[i]=function(j)&#123;  //原理和上面一种方法一样的，所以可以实现闭包 </span><br><span class="line">				return j; //这样把匿名函数自我执行的时候赋值给一个变量，那么圆括号是可以去掉的</span><br><span class="line">			&#125;(i);</span><br><span class="line">		&#125;</span><br><span class="line">		return result;</span><br><span class="line">	 &#125;</span><br><span class="line">	 var a=createFunction();</span><br><span class="line">	 for(var i=0;i&lt;a.length;i++)&#123;</span><br><span class="line">	 console.log(a[i]);</span><br><span class="line">	 &#125;</span><br></pre></td></tr></table></figure>
+<p>匿名函数在执行的时候他本身就传递给了一个变量result[i]，所以匿名函数的圆括号是可以去掉的</p>
+<p>以上就是几种解决闭包一些的办法，当然还有更多办法。大家可以选择更多的资料加深印象。</p>
+<p>以上就是本文的全部内容，希望对大家的学习有所帮助。</p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -211,16 +231,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/20/blog/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/11/23/clour/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/11/23/photo/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          技术分享篇
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/10/20/blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">技术分享篇</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -240,12 +328,14 @@
 
 
 
+  
+  
+  
 
   
+
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
+
   
 
 
@@ -268,8 +358,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

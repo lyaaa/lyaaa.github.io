@@ -159,10 +159,24 @@
     <article id="post-jquery选择器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/16/jquery选择器/">jQuery--选择器</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/16/jquery选择器/" class="archive-article-date">
+  	<time datetime="2018-05-16T13:21:50.091Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-16</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="title：jQuery–选择器（转虚竹梦姑）"><a href="#title：jQuery–选择器（转虚竹梦姑）" class="headerlink" title="title：jQuery–选择器（转虚竹梦姑）"></a>title：jQuery–选择器（转虚竹梦姑）</h2><h4 id="一、JavaScript中选择元素"><a href="#一、JavaScript中选择元素" class="headerlink" title="一、JavaScript中选择元素"></a>一、JavaScript中选择元素</h4><p>• document.getElementById()<br>• document.getElementsByName()<br>• document.getElementsByTagName()<br>• document.getElementsByClassName()<br>• document.querySelector()<br>• document.querySelectorAll()<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jsSelector&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        #box1 &#123;</span><br><span class="line">            width: 100px;</span><br><span class="line">            height: 100px;</span><br><span class="line">            background-color: blue;</span><br><span class="line">        &#125;</span><br><span class="line">        #box2 &#123;</span><br><span class="line">            width: 100px;</span><br><span class="line">            height: 100px;</span><br><span class="line">            background-color: red;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;box1&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;div id=&quot;box2&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;box&quot;&gt;.box&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;box&quot;&gt;.box&lt;/div&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;script src=&quot;../../../vendor/jquery-1.12.4.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    $(function () &#123;</span><br><span class="line">//        var element1 = document.getElementById(&apos;box1&apos;);</span><br><span class="line">//        var element2 = document.getElementById(&apos;box2&apos;);</span><br><span class="line">//        var element3 = document.getElementsByClassName(&apos;box&apos;);</span><br><span class="line">//        var element4 = document.getElementsByName(&apos;username&apos;);</span><br><span class="line">//        var element5 = document.getElementsByTagName(&apos;div&apos;);</span><br><span class="line">//</span><br><span class="line">//        console.log(element1);</span><br><span class="line">//        console.log(element2);</span><br><span class="line">//        console.log(element3);</span><br><span class="line">//        console.log(element4);</span><br><span class="line">//        console.log(element5);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        var element6 = document.querySelector(&apos;.box&apos;);</span><br><span class="line">        var element7 = document.querySelectorAll(&apos;.box&apos;);</span><br><span class="line">        console.log(element6);</span><br><span class="line">        console.log(element7);</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure></p>
+        <h4 id="一、JavaScript中选择元素"><a href="#一、JavaScript中选择元素" class="headerlink" title="一、JavaScript中选择元素"></a>一、JavaScript中选择元素</h4><p>• document.getElementById()<br>• document.getElementsByName()<br>• document.getElementsByTagName()<br>• document.getElementsByClassName()<br>• document.querySelector()<br>• document.querySelectorAll()<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jsSelector&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        #box1 &#123;</span><br><span class="line">            width: 100px;</span><br><span class="line">            height: 100px;</span><br><span class="line">            background-color: blue;</span><br><span class="line">        &#125;</span><br><span class="line">        #box2 &#123;</span><br><span class="line">            width: 100px;</span><br><span class="line">            height: 100px;</span><br><span class="line">            background-color: red;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;box1&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;div id=&quot;box2&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;box&quot;&gt;.box&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;box&quot;&gt;.box&lt;/div&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;script src=&quot;../../../vendor/jquery-1.12.4.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    $(function () &#123;</span><br><span class="line">//        var element1 = document.getElementById(&apos;box1&apos;);</span><br><span class="line">//        var element2 = document.getElementById(&apos;box2&apos;);</span><br><span class="line">//        var element3 = document.getElementsByClassName(&apos;box&apos;);</span><br><span class="line">//        var element4 = document.getElementsByName(&apos;username&apos;);</span><br><span class="line">//        var element5 = document.getElementsByTagName(&apos;div&apos;);</span><br><span class="line">//</span><br><span class="line">//        console.log(element1);</span><br><span class="line">//        console.log(element2);</span><br><span class="line">//        console.log(element3);</span><br><span class="line">//        console.log(element4);</span><br><span class="line">//        console.log(element5);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        var element6 = document.querySelector(&apos;.box&apos;);</span><br><span class="line">        var element7 = document.querySelectorAll(&apos;.box&apos;);</span><br><span class="line">        console.log(element6);</span><br><span class="line">        console.log(element7);</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure></p>
 <h4 id="二、CSS中选择元素"><a href="#二、CSS中选择元素" class="headerlink" title="二、CSS中选择元素"></a>二、CSS中选择元素</h4><ul>
 <li>CSS 选择器<br>①基本选择器<br><img src="/img/10.png" alt="基本选择器"><br>②属性选择器<br><img src="/img/11.png" alt="属性选择器"><br>③伪类选择器<br><img src="/img/12.png" alt="伪类选择器"><br>④伪元素选择器<br><img src="/img/13.png" alt="伪元素选择器"><br>⑤伪元素<br><img src="/img/14.png" alt="伪元素"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;example&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        #box1 &#123;</span><br><span class="line">            width: 100px;</span><br><span class="line">            height: 100px;</span><br><span class="line">            background-color: blue;</span><br><span class="line">        &#125;</span><br><span class="line">        #box2 &#123;</span><br><span class="line">            width: 100px;</span><br><span class="line">            height: 100px;</span><br><span class="line">            background-color: red;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;box1&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;div id=&quot;box2&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;script src=&quot;../../../vendor/jquery-1.12.4.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
 </li>
@@ -199,256 +213,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/05/16/jquery选择器/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-0.1+0.2问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/16/0.1+0.2问题/">如何解决0.1 +0.2===0.30000000000000004类问题	(转)</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/16/0.1+0.2问题/" class="archive-article-date">
-  	<time datetime="2018-05-16T06:54:08.890Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>这篇博客将主要提供几种解决小数精度丢失问题的Javascript类库的代码示例，以及简单的原生EcmaScript方法的代码示例。</p>
-</blockquote>
-<h3 id="一-类库部分"><a href="#一-类库部分" class="headerlink" title="一.类库部分"></a>一.类库部分</h3><h4 id="math-js"><a href="#math-js" class="headerlink" title="math.js"></a>math.js</h4><p>math.js是JavaScript和Node.js的一个广泛的数学库。支持数字，大数，复数，分数，单位和矩阵等数据类型的运算。</p>
-<p>官网：<a href="http://mathjs.org/" target="_blank" rel="noopener">http://mathjs.org/</a><br>GitHub：<a href="https://github.com/josdejong/mathjs" target="_blank" rel="noopener">https://github.com/josdejong/mathjs</a></p>
-<p>0.1+0.2 ===0.3实现代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var math = require(&apos;mathjs&apos;)</span><br><span class="line">console.log(math.add(0.1,0.2))//0.30000000000000004</span><br><span class="line">console.log(math.format((math.add(math.bignumber(0.1),math.bignumber(0.2)))))//&apos;0.3&apos;</span><br></pre></td></tr></table></figure></p>
-<h4 id="decimal-js"><a href="#decimal-js" class="headerlink" title="decimal.js"></a>decimal.js</h4><p>为 JavaScript 提供十进制类型的任意精度数值。</p>
-<p>官网：<a href="http://mikemcl.github.io/decimal.js/" target="_blank" rel="noopener">http://mikemcl.github.io/decimal.js/</a></p>
-<p>GitHub：<a href="https://github.com/MikeMcl/decimal.js" target="_blank" rel="noopener">https://github.com/MikeMcl/decimal.js</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var Decimal = require(&apos;decimal.js&apos;)</span><br><span class="line">x = new  Decimal(0.1)</span><br><span class="line">y = 0.2</span><br><span class="line">console.log(x.plus(y).toString())//&apos;0.3&apos;</span><br></pre></td></tr></table></figure></p>
-<h4 id="bignumber-js"><a href="#bignumber-js" class="headerlink" title="bignumber.js"></a>bignumber.js</h4><p>用于任意精度算术的JavaScript库。</p>
-<p>官网：<a href="http://mikemcl.github.io/bignumber.js/" target="_blank" rel="noopener">http://mikemcl.github.io/bignumber.js/</a></p>
-<p>Github：<a href="https://github.com/MikeMcl/bignumber.js" target="_blank" rel="noopener">https://github.com/MikeMcl/bignumber.js</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var BigNumber = require(&quot;bignumber.js&quot;)</span><br><span class="line">x = new BigNumber(0.1)</span><br><span class="line">y = 0.2</span><br><span class="line">console.log(x.plus(y).toString())//&apos;0.3&apos;</span><br></pre></td></tr></table></figure>
-<h4 id="big-js"><a href="#big-js" class="headerlink" title="big.js"></a>big.js</h4><p>用于任意精度十进制算术的小型快速JavaScript库。</p>
-<p>官网：<a href="http://mikemcl.github.io/big.js/" target="_blank" rel="noopener">http://mikemcl.github.io/big.js/</a></p>
-<p>Github：<a href="https://github.com/MikeMcl/big.js/" target="_blank" rel="noopener">https://github.com/MikeMcl/big.js/</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var Big = require(&quot;big.js&quot;)</span><br><span class="line">x = new Big(0.1)</span><br><span class="line">y = 0.2</span><br><span class="line">console.log(x.plus(y).toString())//&apos;0.3&apos;</span><br></pre></td></tr></table></figure>
-<p>有一个需要注意的点，使用类库此时输出的0.3是String类型，因此若想保持为Number类型，可使用parseFloat()方法。</p>
-<p>还有一个注意点，在本地install测试的时候，npm i mathjs -g ，require是也要require(‘mathjs’)，而不是带点的math.js，因为josdejong这哥们在创建项目的时候就命名为mathjs，而同时拥有上述decimal.js， bignumber.js和big.js的MikeMcl，项目名字就带了dot，因此安装和引入时，都是xxx.js的形式。</p>
-<p>如何在这三个类库之间做选择，还需要大家自己根据具体情况具体分析，我在这里就不赘述了。</p>
-<p>最后，教大家一个线上直接测试的网站，<a href="https://npm.runkit.com，子路径输入想要测试的Node.js" target="_blank" rel="noopener">https://npm.runkit.com，子路径输入想要测试的Node.js</a> package名，就可以实现在线测试包中的api了。<br>例如：<br>math.js：<a href="https://npm.runkit.com/mathjs" target="_blank" rel="noopener">https://npm.runkit.com/mathjs</a><br>big.js：<a href="https://npm.runkit.com/big.js" target="_blank" rel="noopener">https://npm.runkit.com/big.js</a></p>
-<h3 id="二-原生方法"><a href="#二-原生方法" class="headerlink" title="二.原生方法"></a>二.原生方法</h3><p>类库其实很强大，我们计算0.1+0.2其实只是用到了冰山一角，那么我们如何使用原生的EcmaScript代码来应用于简单的问题场景呢？</p>
-<p>这就要用到Number.prototype.toFixed()这个方法了。</p>
-<p>浮点数运算</p>
-<p>toFixed() 方法</p>
-<p>浮点数运算的解决方案有很多，这里给出一种目前常用的解决方案, 在判断浮点数运算结果前对计算结果进行精度缩小，因为在精度缩小的过程总会自动四舍五入。</p>
-<p>toFixed() 方法使用定点表示法来格式化一个数，会对结果进行四舍五入。语法为：</p>
-<p>JavaScript 代码:<br>numObj.toFixed(digits)<br>参数 digits 表示小数点后数字的个数；介于 0 到 20 （包括）之间，实现环境可能支持更大范围。如果忽略该参数，则默认为 0。</p>
-<p>返回一个数值的字符串表现形式，不使用指数记数法，而是在小数点后有 digits 位数字。该数值在必要时进行四舍五入，另外在必要时会用 0 来填充小数部分，以便小数部分有指定的位数。 如果数值大于 1e+21，该方法会简单调用 Number.prototype.toString()并返回一个指数记数法格式的字符串。</p>
-<p>特别注意：toFixed() 返回一个数值的字符串表现形式。</p>
-<p>具体可以查看 MDN中的说明，那么我们可以这样解决精度问题：</p>
-<p>JavaScript 代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">parseFloat((数学表达式).toFixed(digits))； // toFixed() 精度参数须在 0 与20 之间</span><br><span class="line">// 运行</span><br><span class="line">parseFloat((0.1 + 0.2).toFixed(10))//结果为0.3</span><br><span class="line">parseFloat((0.3 / 0.1).toFixed(10)) // 结果为 3  </span><br><span class="line">parseFloat((0.7 * 180).toFixed(10))//结果为126</span><br><span class="line">parseFloat((1.0 - 0.9).toFixed(10)) // 结果为 0.1   </span><br><span class="line">parseFloat((9.7 * 100).toFixed(10)) // 结果为 970 </span><br><span class="line">parseFloat((2.22 + 0.1).toFixed(10)) // 结果为 2.32</span><br></pre></td></tr></table></figure></p>
-<p>在Browser环境精度参数允许0~100位之间（包括100），测试版本为Chrome62(64位)和Firefox56 (32 位)。<br>在Nodejs环境中，只能是0~20之间，测试版本为v6.9.5。</p>
-<p>其次就是toFixed()的浏览器兼容性讨论，MDN给出的结果全部是YES，无论desktop端还是mobile端，也就是说不用担心toFixed()的兼容性问题（ie8- 我们不做讨论）。</p>
-<p>desktop端：<br><img src="/img/1.png" alt="desktop端"></p>
-<p>mobile端：<br><img src="/img/2.png" alt="mobile端"><br>Thanks:<br><a href="http://www.css88.com/archives.." target="_blank" rel="noopener">http://www.css88.com/archives..</a>.<br><a href="https://developer.mozilla.org.." target="_blank" rel="noopener">https://developer.mozilla.org..</a>.</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/16/0.1+0.2问题/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vueSwiper" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/15/vueSwiper/">vue2.0使用swiper组件实现轮播</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/15/vueSwiper/" class="archive-article-date">
-  	<time datetime="2018-05-15T12:18:27.561Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>Swiper(Swiper master)是目前应用较广泛的移动端网页触摸内容滑动js插件。<br>基于 Swiper4、适用于 Vue 的轮播组件，支持服务端渲染和单页应用。<br>如果需要回退到 Swiper3，请使用 v2.6.7 版本。</li>
-</ul>
-<h3 id="Vue-Awesome-Swiper"><a href="#Vue-Awesome-Swiper" class="headerlink" title="Vue-Awesome-Swiper"></a>Vue-Awesome-Swiper</h3><h2 id="安装swiper"><a href="#安装swiper" class="headerlink" title="安装swiper"></a>安装swiper</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install vue-awesome-swiper --save</span><br></pre></td></tr></table></figure>
-<h2 id="调用-在main-js中引用swiper"><a href="#调用-在main-js中引用swiper" class="headerlink" title="调用 在main.js中引用swiper"></a>调用 在main.js中引用swiper</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> import Vue from &apos;vue&apos;</span><br><span class="line"> import VueAwesomeSwiper from &apos;vue-awesome-swiper&apos;</span><br><span class="line">// 导入swiper样式</span><br><span class="line"> import &apos;swiper/dist/css/swiper.css&apos;</span><br><span class="line"> Vue.use(VueAwesomeSwiper)</span><br></pre></td></tr></table></figure>
-<h2 id="在组件中使用swiper插件"><a href="#在组件中使用swiper插件" class="headerlink" title="在组件中使用swiper插件"></a>在组件中使用swiper插件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 导入样式</span><br><span class="line">import &apos;swiper/dist/css/swiper.css&apos;</span><br><span class="line">// 导入swiper</span><br><span class="line">import &#123; swiper , swiperSlide &#125; from &apos;vue-awesome-swiper&apos;</span><br><span class="line">//注册组件</span><br><span class="line">export default&#123;</span><br><span class="line">	components:&#123;</span><br><span class="line">		swiper,</span><br><span class="line">		swiperSlide</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="异步数据请求-example"><a href="#异步数据请求-example" class="headerlink" title="异步数据请求 example"></a>异步数据请求 example</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;swiper :options=&quot;swiperOption&quot;&gt;</span><br><span class="line">    &lt;swiper-slide v-for=&quot;(slide, index) in swiperSlides&quot; :key=&quot;index&quot;&gt;I&apos;m Slide &#123;&#123; slide &#125;&#125;&lt;/swiper-slide&gt;</span><br><span class="line">    &lt;div class=&quot;swiper-pagination&quot; slot=&quot;pagination&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/swiper&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	// 导入样式</span><br><span class="line">  import &apos;swiper/dist/css/swiper.css&apos;</span><br><span class="line">	// 导入swiper</span><br><span class="line">  import &#123; swiper , swiperSlide &#125; from &apos;vue-awesome-swiper&apos;</span><br><span class="line">  export default &#123;</span><br><span class="line">    name: &apos;carrousel&apos;,</span><br><span class="line">    data() &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        swiperOption: &#123;</span><br><span class="line">          pagination: &#123;</span><br><span class="line">            el: &apos;.swiper-pagination&apos;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        swiperSlides: [1, 2, 3, 4, 5]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    mounted() &#123;</span><br><span class="line">      setInterval(() =&gt; &#123;</span><br><span class="line">        if (this.swiperSlides.length &lt; 10) &#123;</span><br><span class="line">          this.swiperSlides.push(this.swiperSlides.length + 1)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;, 3000)</span><br><span class="line">    &#125;,</span><br><span class="line">    components:&#123;</span><br><span class="line">		swiper,</span><br><span class="line">		swiperSlide</span><br><span class="line">	&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Vue-Awesome-Swiper 插件 swiper官网中的API配置均可使用</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/15/vueSwiper/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vuemint-ui" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/15/vuemint-ui/">搭建Vuemint-ui 框架</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/15/vuemint-ui/" class="archive-article-date">
-  	<time datetime="2018-05-15T09:09:03.908Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>mint-ui 是有饿了么前端团队推出的基于Vue.js的移动端组件库。下面就让我们一起来看看mint-ui的构建吧。</li>
-</ul>
-<h3 id="安装vue-js环境"><a href="#安装vue-js环境" class="headerlink" title="安装vue.js环境"></a>安装vue.js环境</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 全局安装脚手架</span><br><span class="line">npm install -g vue-cli</span><br></pre></td></tr></table></figure>
-<h3 id="创建vue项目"><a href="#创建vue项目" class="headerlink" title="创建vue项目"></a>创建vue项目</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 创建一个基于 webpack 模板的新项目</span><br><span class="line"> vue init webpack my-prj</span><br><span class="line">// 安装依赖</span><br><span class="line"> cd my-project</span><br><span class="line"> npm install</span><br><span class="line">// 安装路由</span><br><span class="line"> npm install vue-router</span><br></pre></td></tr></table></figure>
-<h3 id="下载、引用Mint-ui"><a href="#下载、引用Mint-ui" class="headerlink" title="下载、引用Mint-ui"></a>下载、引用Mint-ui</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install mint-ui -S</span><br><span class="line"></span><br><span class="line">// 引入全部组件 在main.js中引用</span><br><span class="line">import Mint from &apos;mint-ui&apos;</span><br><span class="line">Vue.use(Mint)</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>每个组件的使用方法请阅读文档，这里只举一个微小的例子。在 app.vue 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;h1&gt;mint-uiexample&lt;/h1&gt;</span><br><span class="line">  &lt;mt-button</span><br><span class="line">    type=&quot;primary&quot;</span><br><span class="line">    @click=&quot;sheetVisible = true&quot;&gt;</span><br><span class="line">    选择操作</span><br><span class="line">  &lt;/mt-button&gt;</span><br><span class="line">  &lt;mt-actionsheet</span><br><span class="line">    cancel-text=&quot;&quot;</span><br><span class="line">    :actions=&quot;actions&quot;</span><br><span class="line">    :visible.sync=&quot;sheetVisible&quot;&gt;</span><br><span class="line">  &lt;/mt-actionsheet&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  import &#123; Toast, MessageBox &#125; from &apos;mint-ui&apos;;</span><br><span class="line">  export default &#123;</span><br><span class="line">    name: &apos;app&apos;,</span><br><span class="line"></span><br><span class="line">    data() &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        sheetVisible: false,</span><br><span class="line">        actions: [&#123;</span><br><span class="line">          name: &apos;展示 Toast&apos;,</span><br><span class="line">          method: this.showToast</span><br><span class="line">        &#125;, &#123;</span><br><span class="line">          name: &apos;展示 Message Box&apos;,</span><br><span class="line">          method: this.showMsgbox</span><br><span class="line">        &#125;]</span><br><span class="line">      &#125;;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    methods: &#123;</span><br><span class="line">      showToast() &#123;</span><br><span class="line">        Toast(&apos;这是一个 Toast&apos;);</span><br><span class="line">      &#125;,</span><br><span class="line"></span><br><span class="line">      showMsgbox() &#123;</span><br><span class="line">        MessageBox(&apos;提示&apos;, &apos;这是一个 Message Box&apos;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>效果如下</p>
-</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/lyaaa/lyaaa.github.io/master/111.jpg" width="350px"></p>
-<h3 id="运行、打包"><a href="#运行、打包" class="headerlink" title="运行、打包"></a>运行、打包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 启动项目 locallhot:8080</span><br><span class="line">npm run dev</span><br><span class="line"></span><br><span class="line">// 打包 生成dist文件夹</span><br><span class="line">npm run bulid</span><br></pre></td></tr></table></figure>
-<ul>
-<li>mint-ui地址 <a href="http://mint-ui.github.io/#!/zh-cn" target="_blank" rel="noopener">http://mint-ui.github.io/#!/zh-cn</a></li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/15/vuemint-ui/">展开全文 >></a>
         </p>
       
 
@@ -565,20 +329,340 @@
 
 
   
-    <article id="post-waterfall" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-0.1+0.2问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/16/waterfall/">瀑布流照片墙布局</a>
+      <a class="article-title" href="/2018/04/02/0.1+0.2问题/">如何解决0.1 +0.2===0.30000000000000004类问题</a>
     </h1>
   
 
         
-        <a href="/2018/04/16/waterfall/" class="archive-article-date">
-  	<time datetime="2018-04-16T11:07:27.688Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-16</time>
+        <a href="/2018/04/02/0.1+0.2问题/" class="archive-article-date">
+  	<time datetime="2018-04-02T07:45:08.082Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>这篇博客将主要提供几种解决小数精度丢失问题的Javascript类库的代码示例，以及简单的原生EcmaScript方法的代码示例。</p>
+</blockquote>
+<h3 id="一-类库部分"><a href="#一-类库部分" class="headerlink" title="一.类库部分"></a>一.类库部分</h3><h4 id="math-js"><a href="#math-js" class="headerlink" title="math.js"></a>math.js</h4><p>math.js是JavaScript和Node.js的一个广泛的数学库。支持数字，大数，复数，分数，单位和矩阵等数据类型的运算。</p>
+<p>官网：<a href="http://mathjs.org/" target="_blank" rel="noopener">http://mathjs.org/</a><br>GitHub：<a href="https://github.com/josdejong/mathjs" target="_blank" rel="noopener">https://github.com/josdejong/mathjs</a></p>
+<p>0.1+0.2 ===0.3实现代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var math = require(&apos;mathjs&apos;)</span><br><span class="line">console.log(math.add(0.1,0.2))//0.30000000000000004</span><br><span class="line">console.log(math.format((math.add(math.bignumber(0.1),math.bignumber(0.2)))))//&apos;0.3&apos;</span><br></pre></td></tr></table></figure></p>
+<h4 id="decimal-js"><a href="#decimal-js" class="headerlink" title="decimal.js"></a>decimal.js</h4><p>为 JavaScript 提供十进制类型的任意精度数值。</p>
+<p>官网：<a href="http://mikemcl.github.io/decimal.js/" target="_blank" rel="noopener">http://mikemcl.github.io/decimal.js/</a></p>
+<p>GitHub：<a href="https://github.com/MikeMcl/decimal.js" target="_blank" rel="noopener">https://github.com/MikeMcl/decimal.js</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var Decimal = require(&apos;decimal.js&apos;)</span><br><span class="line">x = new  Decimal(0.1)</span><br><span class="line">y = 0.2</span><br><span class="line">console.log(x.plus(y).toString())//&apos;0.3&apos;</span><br></pre></td></tr></table></figure></p>
+<h4 id="bignumber-js"><a href="#bignumber-js" class="headerlink" title="bignumber.js"></a>bignumber.js</h4><p>用于任意精度算术的JavaScript库。</p>
+<p>官网：<a href="http://mikemcl.github.io/bignumber.js/" target="_blank" rel="noopener">http://mikemcl.github.io/bignumber.js/</a></p>
+<p>Github：<a href="https://github.com/MikeMcl/bignumber.js" target="_blank" rel="noopener">https://github.com/MikeMcl/bignumber.js</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var BigNumber = require(&quot;bignumber.js&quot;)</span><br><span class="line">x = new BigNumber(0.1)</span><br><span class="line">y = 0.2</span><br><span class="line">console.log(x.plus(y).toString())//&apos;0.3&apos;</span><br></pre></td></tr></table></figure>
+<h4 id="big-js"><a href="#big-js" class="headerlink" title="big.js"></a>big.js</h4><p>用于任意精度十进制算术的小型快速JavaScript库。</p>
+<p>官网：<a href="http://mikemcl.github.io/big.js/" target="_blank" rel="noopener">http://mikemcl.github.io/big.js/</a></p>
+<p>Github：<a href="https://github.com/MikeMcl/big.js/" target="_blank" rel="noopener">https://github.com/MikeMcl/big.js/</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var Big = require(&quot;big.js&quot;)</span><br><span class="line">x = new Big(0.1)</span><br><span class="line">y = 0.2</span><br><span class="line">console.log(x.plus(y).toString())//&apos;0.3&apos;</span><br></pre></td></tr></table></figure>
+<p>有一个需要注意的点，使用类库此时输出的0.3是String类型，因此若想保持为Number类型，可使用parseFloat()方法。</p>
+<p>还有一个注意点，在本地install测试的时候，npm i mathjs -g ，require是也要require(‘mathjs’)，而不是带点的math.js，因为josdejong这哥们在创建项目的时候就命名为mathjs，而同时拥有上述decimal.js， bignumber.js和big.js的MikeMcl，项目名字就带了dot，因此安装和引入时，都是xxx.js的形式。</p>
+<p>如何在这三个类库之间做选择，还需要大家自己根据具体情况具体分析，我在这里就不赘述了。</p>
+<p>最后，教大家一个线上直接测试的网站，<a href="https://npm.runkit.com，子路径输入想要测试的Node.js" target="_blank" rel="noopener">https://npm.runkit.com，子路径输入想要测试的Node.js</a> package名，就可以实现在线测试包中的api了。<br>例如：<br>math.js：<a href="https://npm.runkit.com/mathjs" target="_blank" rel="noopener">https://npm.runkit.com/mathjs</a><br>big.js：<a href="https://npm.runkit.com/big.js" target="_blank" rel="noopener">https://npm.runkit.com/big.js</a></p>
+<h3 id="二-原生方法"><a href="#二-原生方法" class="headerlink" title="二.原生方法"></a>二.原生方法</h3><p>类库其实很强大，我们计算0.1+0.2其实只是用到了冰山一角，那么我们如何使用原生的EcmaScript代码来应用于简单的问题场景呢？</p>
+<p>这就要用到Number.prototype.toFixed()这个方法了。</p>
+<p>浮点数运算</p>
+<p>toFixed() 方法</p>
+<p>浮点数运算的解决方案有很多，这里给出一种目前常用的解决方案, 在判断浮点数运算结果前对计算结果进行精度缩小，因为在精度缩小的过程总会自动四舍五入。</p>
+<p>toFixed() 方法使用定点表示法来格式化一个数，会对结果进行四舍五入。语法为：</p>
+<p>JavaScript 代码:<br>numObj.toFixed(digits)<br>参数 digits 表示小数点后数字的个数；介于 0 到 20 （包括）之间，实现环境可能支持更大范围。如果忽略该参数，则默认为 0。</p>
+<p>返回一个数值的字符串表现形式，不使用指数记数法，而是在小数点后有 digits 位数字。该数值在必要时进行四舍五入，另外在必要时会用 0 来填充小数部分，以便小数部分有指定的位数。 如果数值大于 1e+21，该方法会简单调用 Number.prototype.toString()并返回一个指数记数法格式的字符串。</p>
+<p>特别注意：toFixed() 返回一个数值的字符串表现形式。</p>
+<p>具体可以查看 MDN中的说明，那么我们可以这样解决精度问题：</p>
+<p>JavaScript 代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">parseFloat((数学表达式).toFixed(digits))； // toFixed() 精度参数须在 0 与20 之间</span><br><span class="line">// 运行</span><br><span class="line">parseFloat((0.1 + 0.2).toFixed(10))//结果为0.3</span><br><span class="line">parseFloat((0.3 / 0.1).toFixed(10)) // 结果为 3  </span><br><span class="line">parseFloat((0.7 * 180).toFixed(10))//结果为126</span><br><span class="line">parseFloat((1.0 - 0.9).toFixed(10)) // 结果为 0.1   </span><br><span class="line">parseFloat((9.7 * 100).toFixed(10)) // 结果为 970 </span><br><span class="line">parseFloat((2.22 + 0.1).toFixed(10)) // 结果为 2.32</span><br></pre></td></tr></table></figure></p>
+<p>在Browser环境精度参数允许0~100位之间（包括100），测试版本为Chrome62(64位)和Firefox56 (32 位)。<br>在Nodejs环境中，只能是0~20之间，测试版本为v6.9.5。</p>
+<p>其次就是toFixed()的浏览器兼容性讨论，MDN给出的结果全部是YES，无论desktop端还是mobile端，也就是说不用担心toFixed()的兼容性问题（ie8- 我们不做讨论）。</p>
+<p>desktop端：<br><img src="/img/1.png" alt="desktop端"></p>
+<p>mobile端：<br><img src="/img/2.png" alt="mobile端"><br>Thanks:<br><a href="http://www.css88.com/archives.." target="_blank" rel="noopener">http://www.css88.com/archives..</a>.<br><a href="https://developer.mozilla.org.." target="_blank" rel="noopener">https://developer.mozilla.org..</a>.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/02/0.1+0.2问题/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vueSwiper" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/22/vueSwiper/">vue2.0使用swiper组件实现轮播</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/22/vueSwiper/" class="archive-article-date">
+  	<time datetime="2018-03-22T08:41:02.969Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>Swiper(Swiper master)是目前应用较广泛的移动端网页触摸内容滑动js插件。<br>基于 Swiper4、适用于 Vue 的轮播组件，支持服务端渲染和单页应用。<br>如果需要回退到 Swiper3，请使用 v2.6.7 版本。</li>
+</ul>
+<h3 id="Vue-Awesome-Swiper"><a href="#Vue-Awesome-Swiper" class="headerlink" title="Vue-Awesome-Swiper"></a>Vue-Awesome-Swiper</h3><h2 id="安装swiper"><a href="#安装swiper" class="headerlink" title="安装swiper"></a>安装swiper</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install vue-awesome-swiper --save</span><br></pre></td></tr></table></figure>
+<h2 id="调用-在main-js中引用swiper"><a href="#调用-在main-js中引用swiper" class="headerlink" title="调用 在main.js中引用swiper"></a>调用 在main.js中引用swiper</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> import Vue from &apos;vue&apos;</span><br><span class="line"> import VueAwesomeSwiper from &apos;vue-awesome-swiper&apos;</span><br><span class="line">// 导入swiper样式</span><br><span class="line"> import &apos;swiper/dist/css/swiper.css&apos;</span><br><span class="line"> Vue.use(VueAwesomeSwiper)</span><br></pre></td></tr></table></figure>
+<h2 id="在组件中使用swiper插件"><a href="#在组件中使用swiper插件" class="headerlink" title="在组件中使用swiper插件"></a>在组件中使用swiper插件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 导入样式</span><br><span class="line">import &apos;swiper/dist/css/swiper.css&apos;</span><br><span class="line">// 导入swiper</span><br><span class="line">import &#123; swiper , swiperSlide &#125; from &apos;vue-awesome-swiper&apos;</span><br><span class="line">//注册组件</span><br><span class="line">export default&#123;</span><br><span class="line">	components:&#123;</span><br><span class="line">		swiper,</span><br><span class="line">		swiperSlide</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="异步数据请求-example"><a href="#异步数据请求-example" class="headerlink" title="异步数据请求 example"></a>异步数据请求 example</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;swiper :options=&quot;swiperOption&quot;&gt;</span><br><span class="line">    &lt;swiper-slide v-for=&quot;(slide, index) in swiperSlides&quot; :key=&quot;index&quot;&gt;I&apos;m Slide &#123;&#123; slide &#125;&#125;&lt;/swiper-slide&gt;</span><br><span class="line">    &lt;div class=&quot;swiper-pagination&quot; slot=&quot;pagination&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/swiper&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	// 导入样式</span><br><span class="line">  import &apos;swiper/dist/css/swiper.css&apos;</span><br><span class="line">	// 导入swiper</span><br><span class="line">  import &#123; swiper , swiperSlide &#125; from &apos;vue-awesome-swiper&apos;</span><br><span class="line">  export default &#123;</span><br><span class="line">    name: &apos;carrousel&apos;,</span><br><span class="line">    data() &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        swiperOption: &#123;</span><br><span class="line">          pagination: &#123;</span><br><span class="line">            el: &apos;.swiper-pagination&apos;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        swiperSlides: [1, 2, 3, 4, 5]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    mounted() &#123;</span><br><span class="line">      setInterval(() =&gt; &#123;</span><br><span class="line">        if (this.swiperSlides.length &lt; 10) &#123;</span><br><span class="line">          this.swiperSlides.push(this.swiperSlides.length + 1)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;, 3000)</span><br><span class="line">    &#125;,</span><br><span class="line">    components:&#123;</span><br><span class="line">		swiper,</span><br><span class="line">		swiperSlide</span><br><span class="line">	&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Vue-Awesome-Swiper 插件 swiper官网中的API配置均可使用</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/22/vueSwiper/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-floa" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/17/floa/">事件流</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/17/floa/" class="archive-article-date">
+  	<time datetime="2018-03-17T08:37:07.144Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>JS事件流最早要从IE和网景公司的浏览器大战说起，IE提出的是冒泡流，而网景提出的是捕获流，后来在W3C组织的统一之下，JS支持了冒泡流和捕获流，但是目前低版本的IE浏览器还是只能支持冒泡流(IE6,IE7,IE8均只支持冒泡流)，所以为了能够兼容更多的浏览器，建议大家使用冒泡流。</li>
+</ul>
+<h3 id="事件作用范围"><a href="#事件作用范围" class="headerlink" title="事件作用范围"></a>事件作用范围</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">//css</span><br><span class="line"></span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	#wrap &#123;</span><br><span class="line">	  width: 200px;</span><br><span class="line">	  height: 200px;</span><br><span class="line">	  background: orange;</span><br><span class="line">	&#125;</span><br><span class="line">	#content &#123;</span><br><span class="line">	  position: relative;</span><br><span class="line">	  top: 50px;</span><br><span class="line">	  left: 50px;</span><br><span class="line">	  width: 100px;</span><br><span class="line">	  height: 100px;</span><br><span class="line">	  background: #eeddff;</span><br><span class="line">	&#125;</span><br><span class="line">	#inner &#123;</span><br><span class="line">	  position: relative;</span><br><span class="line">	  top: 25px;</span><br><span class="line">	  left:25px;</span><br><span class="line">	  width: 50px;</span><br><span class="line">	  height: 50px;</span><br><span class="line">	  background: #44ddff;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//html</span><br><span class="line">&lt;div id=&quot;wrap&quot;&gt;</span><br><span class="line">	&lt;div id=&quot;content&quot;&gt;</span><br><span class="line">		&lt;div id=&quot;inner&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">//js</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	var wrap = document.getElementById(&apos;wrap&apos;);</span><br><span class="line">	wrap.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">		alert(&apos;789&apos;);</span><br><span class="line">	&#125;,false);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">//当点击warp块(包括被子元素的部分)任何一部分时，都会弹出789。这是相当于3个click作用在其上。</span><br></pre></td></tr></table></figure>
+<h5 id="试验"><a href="#试验" class="headerlink" title="试验"></a>试验</h5><p>css  html同上，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//script</span><br><span class="line">var wrap = document.getElementById(&apos;wrap&apos;);</span><br><span class="line">var content = document.getElementById(&apos;content&apos;);</span><br><span class="line">var inner = document.getElementById(&apos;inner&apos;);</span><br><span class="line"></span><br><span class="line">wrap.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">	alert(&apos;789&apos;);</span><br><span class="line">&#125;,false);</span><br><span class="line">content.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">	alert(&apos;456&apos;);</span><br><span class="line">&#125;,false);</span><br><span class="line">inner.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">	alert(&apos;123&apos;);</span><br><span class="line">&#125;,false);</span><br></pre></td></tr></table></figure></p>
+<p>这样执行的话，就会先弹出123，然后弹出456，最后弹出789。</p>
+<h5 id="DOM事件流"><a href="#DOM事件流" class="headerlink" title="DOM事件流"></a>DOM事件流</h5><p>css html 同上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">var wrap = document.getElementById(&apos;wrap&apos;);</span><br><span class="line">var content = document.getElementById(&apos;content&apos;);</span><br><span class="line">var inner = document.getElementById(&apos;inner&apos;);</span><br><span class="line">wrap.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;wrap&apos;);</span><br><span class="line">&#125;,true);</span><br><span class="line">content.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;content&apos;);</span><br><span class="line">&#125;,true);</span><br><span class="line">inner.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;inner&apos;);</span><br><span class="line">&#125;,true);</span><br><span class="line"></span><br><span class="line">wrap.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;wrap11&apos;);</span><br><span class="line">&#125;,false);</span><br><span class="line">content.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;content11&apos;);</span><br><span class="line">&#125;,false);</span><br><span class="line">inner.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;inner11&apos;);</span><br><span class="line">&#125;,false);</span><br></pre></td></tr></table></figure></p>
+<p>这样点击中心执行  会先弹出wrap 在弹出content 后弹出inner  然后弹出inner11，content11，wrap11。<br>按上面的例子为，先调用冒泡阶段的事件处理程序，再调用捕获阶段的事件处理程序。 </p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/17/floa/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vuemitui" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/13/vuemitui/">搭建Vuemint-ui 框架</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/13/vuemitui/" class="archive-article-date">
+  	<time datetime="2018-03-13T03:32:26.793Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>mint-ui 是有饿了么前端团队推出的基于Vue.js的移动端组件库。下面就让我们一起来看看mint-ui的构建吧。</li>
+</ul>
+<h3 id="安装vue-js环境"><a href="#安装vue-js环境" class="headerlink" title="安装vue.js环境"></a>安装vue.js环境</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 全局安装脚手架</span><br><span class="line">npm install -g vue-cli</span><br></pre></td></tr></table></figure>
+<h3 id="创建vue项目"><a href="#创建vue项目" class="headerlink" title="创建vue项目"></a>创建vue项目</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 创建一个基于 webpack 模板的新项目</span><br><span class="line"> vue init webpack my-prj</span><br><span class="line">// 安装依赖</span><br><span class="line"> cd my-project</span><br><span class="line"> npm install</span><br><span class="line">// 安装路由</span><br><span class="line"> npm install vue-router</span><br></pre></td></tr></table></figure>
+<h3 id="下载、引用Mint-ui"><a href="#下载、引用Mint-ui" class="headerlink" title="下载、引用Mint-ui"></a>下载、引用Mint-ui</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install mint-ui -S</span><br><span class="line"></span><br><span class="line">// 引入全部组件 在main.js中引用</span><br><span class="line">import Mint from &apos;mint-ui&apos;</span><br><span class="line">Vue.use(Mint)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>每个组件的使用方法请阅读文档，这里只举一个微小的例子。在 app.vue 中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;h1&gt;mint-uiexample&lt;/h1&gt;</span><br><span class="line">  &lt;mt-button</span><br><span class="line">    type=&quot;primary&quot;</span><br><span class="line">    @click=&quot;sheetVisible = true&quot;&gt;</span><br><span class="line">    选择操作</span><br><span class="line">  &lt;/mt-button&gt;</span><br><span class="line">  &lt;mt-actionsheet</span><br><span class="line">    cancel-text=&quot;&quot;</span><br><span class="line">    :actions=&quot;actions&quot;</span><br><span class="line">    :visible.sync=&quot;sheetVisible&quot;&gt;</span><br><span class="line">  &lt;/mt-actionsheet&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  import &#123; Toast, MessageBox &#125; from &apos;mint-ui&apos;;</span><br><span class="line">  export default &#123;</span><br><span class="line">    name: &apos;app&apos;,</span><br><span class="line"></span><br><span class="line">    data() &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        sheetVisible: false,</span><br><span class="line">        actions: [&#123;</span><br><span class="line">          name: &apos;展示 Toast&apos;,</span><br><span class="line">          method: this.showToast</span><br><span class="line">        &#125;, &#123;</span><br><span class="line">          name: &apos;展示 Message Box&apos;,</span><br><span class="line">          method: this.showMsgbox</span><br><span class="line">        &#125;]</span><br><span class="line">      &#125;;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    methods: &#123;</span><br><span class="line">      showToast() &#123;</span><br><span class="line">        Toast(&apos;这是一个 Toast&apos;);</span><br><span class="line">      &#125;,</span><br><span class="line"></span><br><span class="line">      showMsgbox() &#123;</span><br><span class="line">        MessageBox(&apos;提示&apos;, &apos;这是一个 Message Box&apos;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果如下</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/lyaaa/lyaaa.github.io/master/111.jpg" width="350px"></p>
+<h3 id="运行、打包"><a href="#运行、打包" class="headerlink" title="运行、打包"></a>运行、打包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 启动项目 locallhot:8080</span><br><span class="line">npm run dev</span><br><span class="line"></span><br><span class="line">// 打包 生成dist文件夹</span><br><span class="line">npm run bulid</span><br></pre></td></tr></table></figure>
+<ul>
+<li>mint-ui地址 <a href="http://mint-ui.github.io/#!/zh-cn" target="_blank" rel="noopener">http://mint-ui.github.io/#!/zh-cn</a></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/13/vuemitui/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-wanderful" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/19/wanderful/">瀑布流照片墙布局</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/19/wanderful/" class="archive-article-date">
+  	<time datetime="2018-01-19T02:16:59.808Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-19</time>
 </a>
         
       </header>
@@ -617,77 +701,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/16/waterfall/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-floa" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/12/floa/">事件流</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/12/floa/" class="archive-article-date">
-  	<time datetime="2018-04-12T10:45:12.115Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>JS事件流最早要从IE和网景公司的浏览器大战说起，IE提出的是冒泡流，而网景提出的是捕获流，后来在W3C组织的统一之下，JS支持了冒泡流和捕获流，但是目前低版本的IE浏览器还是只能支持冒泡流(IE6,IE7,IE8均只支持冒泡流)，所以为了能够兼容更多的浏览器，建议大家使用冒泡流。</li>
-</ul>
-<h3 id="事件作用范围"><a href="#事件作用范围" class="headerlink" title="事件作用范围"></a>事件作用范围</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">//css</span><br><span class="line"></span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	#wrap &#123;</span><br><span class="line">	  width: 200px;</span><br><span class="line">	  height: 200px;</span><br><span class="line">	  background: orange;</span><br><span class="line">	&#125;</span><br><span class="line">	#content &#123;</span><br><span class="line">	  position: relative;</span><br><span class="line">	  top: 50px;</span><br><span class="line">	  left: 50px;</span><br><span class="line">	  width: 100px;</span><br><span class="line">	  height: 100px;</span><br><span class="line">	  background: #eeddff;</span><br><span class="line">	&#125;</span><br><span class="line">	#inner &#123;</span><br><span class="line">	  position: relative;</span><br><span class="line">	  top: 25px;</span><br><span class="line">	  left:25px;</span><br><span class="line">	  width: 50px;</span><br><span class="line">	  height: 50px;</span><br><span class="line">	  background: #44ddff;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//html</span><br><span class="line">&lt;div id=&quot;wrap&quot;&gt;</span><br><span class="line">	&lt;div id=&quot;content&quot;&gt;</span><br><span class="line">		&lt;div id=&quot;inner&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">//js</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	var wrap = document.getElementById(&apos;wrap&apos;);</span><br><span class="line">	wrap.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">		alert(&apos;789&apos;);</span><br><span class="line">	&#125;,false);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">//当点击warp块(包括被子元素的部分)任何一部分时，都会弹出789。这是相当于3个click作用在其上。</span><br></pre></td></tr></table></figure>
-<h5 id="试验"><a href="#试验" class="headerlink" title="试验"></a>试验</h5><p>css  html同上，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//script</span><br><span class="line">var wrap = document.getElementById(&apos;wrap&apos;);</span><br><span class="line">var content = document.getElementById(&apos;content&apos;);</span><br><span class="line">var inner = document.getElementById(&apos;inner&apos;);</span><br><span class="line"></span><br><span class="line">wrap.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">	alert(&apos;789&apos;);</span><br><span class="line">&#125;,false);</span><br><span class="line">content.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">	alert(&apos;456&apos;);</span><br><span class="line">&#125;,false);</span><br><span class="line">inner.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">	alert(&apos;123&apos;);</span><br><span class="line">&#125;,false);</span><br></pre></td></tr></table></figure></p>
-<p>这样执行的话，就会先弹出123，然后弹出456，最后弹出789。</p>
-<h5 id="DOM事件流"><a href="#DOM事件流" class="headerlink" title="DOM事件流"></a>DOM事件流</h5><p>css html 同上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">var wrap = document.getElementById(&apos;wrap&apos;);</span><br><span class="line">var content = document.getElementById(&apos;content&apos;);</span><br><span class="line">var inner = document.getElementById(&apos;inner&apos;);</span><br><span class="line">wrap.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;wrap&apos;);</span><br><span class="line">&#125;,true);</span><br><span class="line">content.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;content&apos;);</span><br><span class="line">&#125;,true);</span><br><span class="line">inner.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;inner&apos;);</span><br><span class="line">&#125;,true);</span><br><span class="line"></span><br><span class="line">wrap.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;wrap11&apos;);</span><br><span class="line">&#125;,false);</span><br><span class="line">content.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;content11&apos;);</span><br><span class="line">&#125;,false);</span><br><span class="line">inner.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">  alert(&apos;inner11&apos;);</span><br><span class="line">&#125;,false);</span><br></pre></td></tr></table></figure></p>
-<p>这样点击中心执行  会先弹出wrap 在弹出content 后弹出inner  然后弹出inner11，content11，wrap11。<br>按上面的例子为，先调用冒泡阶段的事件处理程序，再调用捕获阶段的事件处理程序。 </p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/12/floa/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/19/wanderful/">展开全文 >></a>
         </p>
       
 
@@ -724,13 +738,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/11/reg/">半小时掌握正则表达式</a>
+      <a class="article-title" href="/2017/12/06/reg/">半小时掌握正则表达式</a>
     </h1>
   
 
         
-        <a href="/2018/04/11/reg/" class="archive-article-date">
-  	<time datetime="2018-04-11T11:49:44.175Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-11</time>
+        <a href="/2017/12/06/reg/" class="archive-article-date">
+  	<time datetime="2017-12-06T08:32:34.049Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-06</time>
 </a>
         
       </header>
@@ -772,7 +786,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/11/reg/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/12/06/reg/">展开全文 >></a>
         </p>
       
 
@@ -802,20 +816,20 @@
 
 
   
-    <article id="post-proto" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-photo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/10/proto/">技术分享篇</a>
+      <a class="article-title" href="/2017/11/23/photo/">技术分享篇</a>
     </h1>
   
 
         
-        <a href="/2018/04/10/proto/" class="archive-article-date">
-  	<time datetime="2018-04-10T11:33:43.923Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-10</time>
+        <a href="/2017/11/23/photo/" class="archive-article-date">
+  	<time datetime="2017-11-23T02:30:54.282Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-23</time>
 </a>
         
       </header>
@@ -846,7 +860,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/10/proto/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/11/23/photo/">展开全文 >></a>
         </p>
       
 
@@ -876,20 +890,20 @@
 
 
   
-    <article id="post-closure" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-clour" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/09/closure/">技术分享篇</a>
+      <a class="article-title" href="/2017/11/23/clour/">技术分享篇</a>
     </h1>
   
 
         
-        <a href="/2018/04/09/closure/" class="archive-article-date">
-  	<time datetime="2018-04-09T09:03:05.965Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-09</time>
+        <a href="/2017/11/23/clour/" class="archive-article-date">
+  	<time datetime="2017-11-23T02:29:43.644Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-23</time>
 </a>
         
       </header>
@@ -929,7 +943,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/09/closure/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/11/23/clour/">展开全文 >></a>
         </p>
       
 
