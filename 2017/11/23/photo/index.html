@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="刘沅的博客">
 <meta property="og:description" content="Welcome  原型链原型对象在Javascript中，万物皆对象，但对象也有区别，大致可以分为两类，即：普通对象 Object 和 函数对象 Function。 一般通过 new Function 产生的对象是函数对象，其他对象都是普通对象。 所有的对象都有（proto）属性  只有函数对象有（prototype）属性 函数对象12345678function fn()&amp;#123;&amp;#125;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2017-11-23T02:30:54.284Z">
+<meta property="og:updated_time" content="2018-06-05T02:11:53.070Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="技术分享篇">
 <meta name="twitter:description" content="Welcome  原型链原型对象在Javascript中，万物皆对象，但对象也有区别，大致可以分为两类，即：普通对象 Object 和 函数对象 Function。 一般通过 new Function 产生的对象是函数对象，其他对象都是普通对象。 所有的对象都有（proto）属性  只有函数对象有（prototype）属性 函数对象12345678function fn()&amp;#123;&amp;#125;">
@@ -184,6 +184,7 @@
 <p>所有的对象都有（<em>proto</em>）属性  只有函数对象有（prototype）属性</p>
 <p>函数对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function fn()&#123;&#125;;</span><br><span class="line">var fn1=function()&#123;&#125;;</span><br><span class="line">console.log(typeof fn);    //function </span><br><span class="line">console.log(typeof fn1);    //function </span><br><span class="line">console.log(typeof Object);    //function </span><br><span class="line">console.log(typeof Array);    //function </span><br><span class="line">console.log(typeof Date);    //function </span><br><span class="line">......</span><br></pre></td></tr></table></figure></p>
 <p>原型对象其实就是构造函数的一个实例对象，例如人对象，相当于在person创建的时候，自动创建了一个它的实例，并且把这个实例赋值给了prototype。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function Person()&#123;&#125;;  </span><br><span class="line">let temp = new Person();  </span><br><span class="line">Person.prototype = temp;</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <h3 id="原型链-1"><a href="#原型链-1" class="headerlink" title="原型链"></a>原型链</h3><p>原型链是实现继承的主要方法</p>
 <p>原型链的思路：利用原型让一个引用类型继承另一个引用类型的属性和方法。</p>
 <p>JS通过原型链实现继承列子：</p>

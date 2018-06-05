@@ -17,7 +17,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/img/1.png">
 <meta property="og:image" content="http://yoursite.com/img/2.png">
-<meta property="og:updated_time" content="2018-04-02T07:45:19.915Z">
+<meta property="og:updated_time" content="2018-06-05T02:10:30.519Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何解决0.1 +0.2===0.30000000000000004类问题">
 <meta name="twitter:description" content="这篇博客将主要提供几种解决小数精度丢失问题的Javascript类库的代码示例，以及简单的原生EcmaScript方法的代码示例。  一.类库部分math.jsmath.js是JavaScript和Node.js的一个广泛的数学库。支持数字，大数，复数，分数，单位和矩阵等数据类型的运算。 官网：http://mathjs.org/GitHub：https://github.com/josdejo">
@@ -190,6 +190,7 @@
 <h4 id="decimal-js"><a href="#decimal-js" class="headerlink" title="decimal.js"></a>decimal.js</h4><p>为 JavaScript 提供十进制类型的任意精度数值。</p>
 <p>官网：<a href="http://mikemcl.github.io/decimal.js/" target="_blank" rel="noopener">http://mikemcl.github.io/decimal.js/</a></p>
 <p>GitHub：<a href="https://github.com/MikeMcl/decimal.js" target="_blank" rel="noopener">https://github.com/MikeMcl/decimal.js</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var Decimal = require(&apos;decimal.js&apos;)</span><br><span class="line">x = new  Decimal(0.1)</span><br><span class="line">y = 0.2</span><br><span class="line">console.log(x.plus(y).toString())//&apos;0.3&apos;</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <h4 id="bignumber-js"><a href="#bignumber-js" class="headerlink" title="bignumber.js"></a>bignumber.js</h4><p>用于任意精度算术的JavaScript库。</p>
 <p>官网：<a href="http://mikemcl.github.io/bignumber.js/" target="_blank" rel="noopener">http://mikemcl.github.io/bignumber.js/</a></p>
 <p>Github：<a href="https://github.com/MikeMcl/bignumber.js" target="_blank" rel="noopener">https://github.com/MikeMcl/bignumber.js</a></p>
